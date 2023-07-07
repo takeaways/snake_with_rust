@@ -36,3 +36,4 @@ npm i -D webpack webpack-cli webpack-dev-server
 
 - public/index.html
 - public/d.wasm
+- <http://localhost:3000/webpack-dev-server>
