@@ -1,10 +1,10 @@
-구조보기 커맨드
+## 구조보기 커맨드
 
 ```bash
 xxd -g1 add.wasm
 ```
 
-웹 어셈블리 구조는 다음과 같음 rust-> 1바이트 명령어 단위로 컴파일 되는것임
+## 웹 어셈블리 구조는 다음과 같음 rust-> 1바이트 명령어 단위로 컴파일 되는것임
 
 ```javascript
 const init = async () => {
@@ -28,7 +28,7 @@ const init = async () => {
 init();
 ```
 
-웹팹데브서버
+## 웹팹데브서버
 
 ```bash
 npm i -D webpack webpack-cli webpack-dev-server
@@ -37,3 +37,9 @@ npm i -D webpack webpack-cli webpack-dev-server
 - public/index.html
 - public/d.wasm
 - <http://localhost:3000/webpack-dev-server>
+
+## 메모리
+
+- 우리는 WASM에서 메모리를 생성하고 JS로 내보낼 수 있습니다.
+- 우리는 JS에서 메모리를 생성하고 WASM으로 가져올 수 있습니다.
+- 1은 1페이지의 메모리를 의미하며, 한 페이지는 약 64KB입니다.
