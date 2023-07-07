@@ -1,12 +1,3 @@
-구조보기 커맨드
-
-```bash
-xxd -g1 add.wasm
-```
-
-웹 어셈블리 구조는 다음과 같음 rust-> 1바이트 명령어 단위로 컴파일 되는것임
-
-```javascript
 const init = async () => {
   console.log(
     "%cWelcome to SnakeGame",
@@ -23,16 +14,6 @@ const init = async () => {
   ]);
   const wasm = await WebAssembly.instantiate(byteArray.buffer);
   const sumFn = wasm.instance.exports.sum;
-  console.log(sumFn(1000, 20));
+  console.log(sumFn(10, 20));
 };
 init();
-```
-
-웹팹데브서버
-
-```bash
-npm i -D webpack webpack-cli webpack-dev-server
-```
-
-- public/index.html
-- public/d.wasm
