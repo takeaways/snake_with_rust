@@ -43,3 +43,11 @@ npm i -D webpack webpack-cli webpack-dev-server
 - 우리는 WASM에서 메모리를 생성하고 JS로 내보낼 수 있습니다.
 - 우리는 JS에서 메모리를 생성하고 WASM으로 가져올 수 있습니다.
 - 1은 1페이지의 메모리를 의미하며, 한 페이지는 약 64KB입니다.
+
+## 다운로드 어셈블리 패키지
+
+```bash
+cargo install wasm-pack
+# 빌드하기
+wasm-pack build --target web
+```
