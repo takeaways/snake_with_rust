@@ -5,11 +5,12 @@ use wee_alloc::WeeAlloc;
 static ALLOC: WeeAlloc = WeeAlloc::INIT;
 
 #[wasm_bindgen]
-pub fn greet(name: &str){
-  alert(name)
+pub struct World{
+  pub width: usize
 }
-
 #[wasm_bindgen]
-extern{
-  pub fn alert(text: &str);
+impl World{
+  pub fn new() -> Self{
+    Self { width: 8 }
+  }
 }
